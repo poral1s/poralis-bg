@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
+	"github.com/Hayabusa58/polar1s/polaris-bg/db"
+	"github.com/Hayabusa58/polar1s/polaris-bg/models"
 	"github.com/gofiber/fiber/v2"
-	"github.com/h4y4bus4/polaris/polaris-bg/db"
-	"github.com/h4y4bus4/polaris/polaris-bg/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

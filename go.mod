@@ -1,4 +1,4 @@
-module github.com/h4y4bus4/polaris/polaris-bg
+module github.com/Hayabusa58/polar1s/polaris-bg
 
 go 1.23.5
 

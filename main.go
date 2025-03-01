@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
+	"github.com/Hayabusa58/polar1s/polaris-bg/db"
+	"github.com/Hayabusa58/polar1s/polaris-bg/handlers"
 	"github.com/gofiber/fiber/v2"
-	"github.com/h4y4bus4/polaris/polaris-bg/db"
-	"github.com/h4y4bus4/polaris/polaris-bg/handlers"
 )
 
 func main() {
