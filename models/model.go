@@ -14,7 +14,17 @@ type Admin struct {
 
 type Hint struct {
 	ID      int    `json:"id" bson:"id"`
+	Number  int    `json:"number" bson:"number"`
 	Content string `json:"content" bson:"content"`
+}
+
+type Course struct {
+	ID         int         `json:"id" bson:"id"`
+	Name       string      `json:"name" bson:"name"`
+	Player     string      `json:"player" bson:"player"`
+	StartPoint interface{} `json:"startpoint" bson:"startpoint"`
+	GoalPoint  interface{} `json:"goalpoint" bson:"goalpoint"`
+	Hints      []Hint      `json:"hints" bson:"hints"`
 }
 
 type Game struct {
@@ -24,7 +34,5 @@ type Game struct {
 	Count   int                `json:"count" bson:"count"`
 	Players []Player           `json:"players" bson:"players"`
 	Admins  []Admin            `json:"admins" bson:"admins"`
-	Hints   []Hint             `json:"hints" bson:"hints"`
-	Score   []interface{}      `json:"score" bson:"score"`
-	Courses []interface{}      `json:"courses" bson:"courses"`
+	Courses []Course           `json:"courses" bson:"courses"`
 }
